@@ -9,17 +9,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <title>April Goldman</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
   </head>
   <body>
 
     <div class="container py-5">
 
-          <div class="col-8 px-5" style="float: left;">
+          <div class="column px-5">
             <img src="goldman-headshot medium.jpeg" class="img-fluid" alt="Woman with brown hair">
           </div>
+          <div class="column">
             <p>
               April Goldman is a poet living in Lake Tahoe, California. Her interests include ecopoetics and ecofeminism, disability studies and mental illness, nonhuman animal rights, and her dogs Lloyd, Pinky, and Cashew. She was a winner of the 2022 92NY Discovery Poetry Contest, earned an MFA in poetry from the University of Houston, and has attended Bread Loaf, Community of Writers and Napa Valley Writers conferences. Recent poems appear or are forthcoming in <i>Best American Poetry 2022</i>, <i>Ploughshares</i>, <i>The Massachusetts Review</i>, <i>Narrative Magazine</i>, and elsewhere. She is working on her first collection. Please say hello on instagram @aprileli or email aprileliza@gmail.com.
             </p> 
+          </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
